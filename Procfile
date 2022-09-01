@@ -1,2 +1,2 @@
-web: python api/index.py
+web: gunicorn --chdir api index:app
 worker: echo $PORT
