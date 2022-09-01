@@ -1,2 +1,2 @@
-web: gunicorn --bind 0.0.0.0:$PORT api index:app
+web: gunicorn --chdir api --bind 0.0.0.0:$PORT index:app
 worker: echo $PORT
