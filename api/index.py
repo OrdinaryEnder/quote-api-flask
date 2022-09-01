@@ -21,9 +21,5 @@ def sendquote():
     }
     return jsonify(loadquote)
 
-port=os.getenv("PORT")
-# defaulting to 5000 if heroku didnt exist
-if port is None:
-   port = 5000
 
-app.run(port=port)
+app.run()
