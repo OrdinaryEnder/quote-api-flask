@@ -22,4 +22,6 @@ def sendquote():
     return jsonify(loadquote)
 
 
-app.run()
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
+
